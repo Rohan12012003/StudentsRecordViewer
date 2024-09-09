@@ -1,0 +1,567 @@
+20-Aug-2024 12:35:49.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.28
+20-Aug-2024 12:35:49.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 15:14:43 UTC
+20-Aug-2024 12:35:49.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.28.0
+20-Aug-2024 12:35:49.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+20-Aug-2024 12:35:49.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-117-generic
+20-Aug-2024 12:35:49.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Aug-2024 12:35:49.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+20-Aug-2024 12:35:49.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-post-Ubuntu-1ubuntu320.04
+20-Aug-2024 12:35:49.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+20-Aug-2024 12:35:49.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 12:35:49.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/rohon/Downloads/apache-tomcat-10.1.28/conf/logging.properties
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Aug-2024 12:35:49.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Aug-2024 12:35:49.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Aug-2024 12:35:49.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 12:35:49.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 12:35:49.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/rohon/Downloads/apache-tomcat-10.1.28/temp
+20-Aug-2024 12:35:49.715 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+20-Aug-2024 12:35:49.974 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 12:35:50.000 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [515] milliseconds
+20-Aug-2024 12:35:50.040 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [57] column [2]
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+		at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:106)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:66)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:32)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:130)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:106)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:81)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:862)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 12:35:50.041 WARNING [main] org.apache.naming.NamingContext.lookup Unexpected exception resolving reference
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+		at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:106)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:66)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:32)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:130)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:106)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:81)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:862)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 12:35:50.042 SEVERE [main] org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans Exception processing global JNDI Resources
+	javax.naming.NamingException: Unexpected exception resolving reference [Root exception is org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.]
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:575)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+		at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:106)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:66)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:32)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:130)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:106)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:81)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:862)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		... 19 more
+20-Aug-2024 12:35:50.046 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Aug-2024 12:35:50.046 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.28]
+20-Aug-2024 12:35:50.052 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [57] column [2]
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+		at org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase(UserDatabaseRealm.java:225)
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 12:35:50.053 WARNING [main] org.apache.naming.NamingContext.lookup Unexpected exception resolving reference
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+		at org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase(UserDatabaseRealm.java:225)
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 12:35:50.053 SEVERE [main] org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase Exception looking up UserDatabase under key [UserDatabase]
+	javax.naming.NamingException: Unexpected exception resolving reference [Root exception is org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.]
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:575)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+		at org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase(UserDatabaseRealm.java:225)
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		... 21 more
+20-Aug-2024 12:35:50.054 SEVERE [main] org.apache.catalina.realm.CombinedRealm.startInternal Failed to start [org.apache.catalina.realm.UserDatabaseRealm] realm
+	org.apache.catalina.LifecycleException: No UserDatabase component found under key [UserDatabase]
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:250)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 12:35:50.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ROOT]
+20-Aug-2024 12:35:50.330 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ROOT] has finished in [298] ms
+20-Aug-2024 12:35:50.359 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ass1]
+20-Aug-2024 12:35:50.543 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ass1] has finished in [192] ms
+20-Aug-2024 12:35:50.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/examples]
+20-Aug-2024 12:35:50.697 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/examples] has finished in [158] ms
+20-Aug-2024 12:35:50.710 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/host-manager]
+20-Aug-2024 12:35:50.736 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.739 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/host-manager] has finished in [29] ms
+20-Aug-2024 12:35:50.739 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/simplejsp]
+20-Aug-2024 12:35:50.762 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.764 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/simplejsp] has finished in [25] ms
+20-Aug-2024 12:35:50.765 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/manager]
+20-Aug-2024 12:35:50.797 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/manager] has finished in [34] ms
+20-Aug-2024 12:35:50.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/docs]
+20-Aug-2024 12:35:50.841 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 12:35:50.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/docs] has finished in [43] ms
+20-Aug-2024 12:35:50.851 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 12:35:50.870 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [869] milliseconds
+20-Aug-2024 12:37:04.125 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Aug-2024 12:37:04.126 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 12:37:04.128 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+20-Aug-2024 12:37:04.151 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 12:37:04.162 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 13:11:49.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.28
+20-Aug-2024 13:11:49.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 15:14:43 UTC
+20-Aug-2024 13:11:49.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.28.0
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-117-generic
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-post-Ubuntu-1ubuntu320.04
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 13:11:49.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 13:11:49.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/rohon/Downloads/apache-tomcat-10.1.28/conf/logging.properties
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Aug-2024 13:11:49.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Aug-2024 13:11:49.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Aug-2024 13:11:49.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Aug-2024 13:11:49.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 13:11:49.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/rohon/Downloads/apache-tomcat-10.1.28
+20-Aug-2024 13:11:49.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/rohon/Downloads/apache-tomcat-10.1.28/temp
+20-Aug-2024 13:11:49.437 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+20-Aug-2024 13:11:49.683 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 13:11:49.708 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [467] milliseconds
+20-Aug-2024 13:11:49.750 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [57] column [2]
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+		at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:106)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:66)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:32)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:130)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:106)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:81)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:862)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 13:11:49.751 WARNING [main] org.apache.naming.NamingContext.lookup Unexpected exception resolving reference
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+		at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:106)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:66)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:32)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:130)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:106)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:81)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:862)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 13:11:49.752 SEVERE [main] org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans Exception processing global JNDI Resources
+	javax.naming.NamingException: Unexpected exception resolving reference [Root exception is org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.]
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:575)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+		at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:106)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:66)
+		at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:32)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:130)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:106)
+		at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:81)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:862)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		... 19 more
+20-Aug-2024 13:11:49.757 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Aug-2024 13:11:49.758 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.28]
+20-Aug-2024 13:11:49.763 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [57] column [2]
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+		at org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase(UserDatabaseRealm.java:225)
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 13:11:49.764 WARNING [main] org.apache.naming.NamingContext.lookup Unexpected exception resolving reference
+	org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+		at org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase(UserDatabaseRealm.java:225)
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 13:11:49.765 SEVERE [main] org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase Exception looking up UserDatabase under key [UserDatabase]
+	javax.naming.NamingException: Unexpected exception resolving reference [Root exception is org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.]
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:575)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+		at org.apache.catalina.realm.UserDatabaseRealm.getUserDatabase(UserDatabaseRealm.java:225)
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1539)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:376)
+		at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:103)
+		at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:91)
+		at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+		at org.apache.naming.NamingContext.lookup(NamingContext.java:544)
+		... 21 more
+20-Aug-2024 13:11:49.766 SEVERE [main] org.apache.catalina.realm.CombinedRealm.startInternal Failed to start [org.apache.catalina.realm.UserDatabaseRealm] realm
+	org.apache.catalina.LifecycleException: No UserDatabase component found under key [UserDatabase]
+		at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:250)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:195)
+		at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:101)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:742)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+20-Aug-2024 13:11:49.772 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ROOT]
+20-Aug-2024 13:11:50.062 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.095 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ROOT] has finished in [323] ms
+20-Aug-2024 13:11:50.095 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ass1]
+20-Aug-2024 13:11:50.317 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/ass1] has finished in [228] ms
+20-Aug-2024 13:11:50.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/examples]
+20-Aug-2024 13:11:50.466 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.483 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/examples] has finished in [158] ms
+20-Aug-2024 13:11:50.483 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/host-manager]
+20-Aug-2024 13:11:50.516 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/host-manager] has finished in [37] ms
+20-Aug-2024 13:11:50.521 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/simplejsp]
+20-Aug-2024 13:11:50.547 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.549 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/simplejsp] has finished in [28] ms
+20-Aug-2024 13:11:50.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/manager]
+20-Aug-2024 13:11:50.596 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.598 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/manager] has finished in [48] ms
+20-Aug-2024 13:11:50.598 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/docs]
+20-Aug-2024 13:11:50.630 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2024 13:11:50.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/rohon/Downloads/apache-tomcat-10.1.28/webapps/docs] has finished in [33] ms
+20-Aug-2024 13:11:50.636 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Aug-2024 13:11:50.651 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [943] milliseconds

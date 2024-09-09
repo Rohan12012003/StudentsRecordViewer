@@ -1,0 +1,1601 @@
+18-Aug-2024 11:45:34.157 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 11:45:34.158 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 11:45:34.159 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3359c978')
+18-Aug-2024 11:52:09.775 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 11:52:09.775 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 11:52:09.777 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4b6ac111')
+18-Aug-2024 11:52:09.895 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 11:52:09.895 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 11:52:41.228 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 11:58:10.918 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 11:58:10.918 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 11:58:12.148 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 11:58:12.149 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 11:58:12.150 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1517f633')
+18-Aug-2024 11:58:18.352 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [java.lang.IllegalStateException: No output directory] with root cause
+	java.lang.IllegalStateException: No output directory
+		at org.apache.jasper.JspCompilationContext.createOutputDir(JspCompilationContext.java:695)
+		at org.apache.jasper.JspCompilationContext.getOutputDir(JspCompilationContext.java:202)
+		at org.apache.jasper.JspCompilationContext.getClassFileName(JspCompilationContext.java:543)
+		at org.apache.jasper.compiler.Compiler.isOutDated(Compiler.java:478)
+		at org.apache.jasper.compiler.Compiler.isOutDated(Compiler.java:444)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 12:03:42.476 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 12:03:42.477 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 12:03:43.694 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 12:03:43.694 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 12:03:43.695 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4fe01803')
+18-Aug-2024 12:04:36.391 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 12:05:32.443 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 12:09:53.497 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 12:09:53.497 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 12:10:34.749 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 12:10:34.749 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 12:10:34.750 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@260a3a5e')
+18-Aug-2024 12:10:42.117 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 12:13:29.021 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 12:13:29.021 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 12:13:30.221 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 12:13:30.222 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 12:13:30.223 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@260a3a5e')
+18-Aug-2024 13:35:11.905 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 13:35:11.906 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 13:35:11.907 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@474c9131')
+18-Aug-2024 13:38:16.611 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 13:38:16.611 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 13:38:18.095 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 13:38:18.095 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 13:38:18.097 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3c0bbc9f')
+18-Aug-2024 13:38:26.482 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing [ErrorPage[errorCode=401, location=/WEB-INF/jsp/401.jsp]]
+	org.apache.jasper.JasperException: java.lang.IllegalStateException: No output directory
+		at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:578)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:422)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267)
+		at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362)
+		at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Caused by: java.lang.IllegalStateException: No output directory
+		at org.apache.jasper.JspCompilationContext.createOutputDir(JspCompilationContext.java:695)
+		at org.apache.jasper.JspCompilationContext.getOutputDir(JspCompilationContext.java:202)
+		at org.apache.jasper.JspCompilationContext.getClassFileName(JspCompilationContext.java:543)
+		at org.apache.jasper.compiler.Compiler.isOutDated(Compiler.java:478)
+		at org.apache.jasper.compiler.Compiler.isOutDated(Compiler.java:444)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		... 25 more
+18-Aug-2024 13:39:55.566 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 13:39:55.566 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 13:39:57.079 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 13:39:57.080 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 13:39:57.084 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@381d7219')
+18-Aug-2024 13:40:04.411 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing [ErrorPage[errorCode=401, location=/WEB-INF/jsp/401.jsp]]
+	org.apache.jasper.JasperException: java.lang.IllegalStateException: No output directory
+		at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:578)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:422)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267)
+		at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362)
+		at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Caused by: java.lang.IllegalStateException: No output directory
+		at org.apache.jasper.JspCompilationContext.createOutputDir(JspCompilationContext.java:695)
+		at org.apache.jasper.JspCompilationContext.getOutputDir(JspCompilationContext.java:202)
+		at org.apache.jasper.JspCompilationContext.getClassFileName(JspCompilationContext.java:543)
+		at org.apache.jasper.compiler.Compiler.isOutDated(Compiler.java:478)
+		at org.apache.jasper.compiler.Compiler.isOutDated(Compiler.java:444)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		... 25 more
+18-Aug-2024 13:43:33.539 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 13:43:33.539 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 13:43:34.944 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 13:43:34.946 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 13:43:34.948 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@79316f3a')
+18-Aug-2024 13:44:08.085 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:00:08.521 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:00:08.521 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:00:10.093 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:00:10.095 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:00:10.096 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4f8d86e4')
+18-Aug-2024 14:00:38.203 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:02:15.771 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:02:15.771 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:02:17.362 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:02:17.363 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:02:17.367 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@49206065')
+18-Aug-2024 14:02:25.851 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:02:37.836 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:25:38.428 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:25:38.429 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:25:44.524 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:25:44.524 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:25:44.526 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5412bfea')
+18-Aug-2024 14:28:49.853 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:32:06.973 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:32:06.973 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:32:06.975 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@18acfe88')
+18-Aug-2024 14:32:07.101 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:32:07.101 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:32:13.993 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:36:14.585 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:36:14.586 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:36:16.532 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:36:16.532 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:36:16.533 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@49206065')
+18-Aug-2024 14:36:33.021 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/ass1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [46] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+43:            // JSP code to fetch and display records
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+
+
+An error occurred at line: [47] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+44:            try {
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+
+
+An error occurred at line: [48] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+45:                Class.forName("com.mysql.cj.jdbc.Driver");
+46:                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentRecords", "root", "your_password");
+47:                Statement stmt = con.createStatement();
+48:                ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+49:                
+50:                while (rs.next()) {
+51:                    out.print("<tr><td>" + rs.getInt("id") + "</td>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:543)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:377)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:325)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Aug-2024 14:39:37.842 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:39:37.842 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:39:39.243 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:39:39.243 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:39:39.244 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2e51d054')
+18-Aug-2024 14:45:53.271 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 14:45:53.271 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 14:45:54.656 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 14:45:54.656 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 14:45:54.657 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@407873d3')
+18-Aug-2024 15:01:35.228 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 15:01:35.228 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 15:01:36.484 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 15:01:36.485 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 15:01:36.486 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@aa4d8cc')
+18-Aug-2024 15:07:59.531 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+18-Aug-2024 15:07:59.531 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+18-Aug-2024 15:08:07.779 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 15:08:07.780 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 15:08:07.781 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@407873d3')
+18-Aug-2024 20:40:49.510 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Aug-2024 20:40:49.510 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Aug-2024 20:40:49.511 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6f139fc9')
